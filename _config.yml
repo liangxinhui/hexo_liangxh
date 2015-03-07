@@ -3,16 +3,15 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Liangxh's Blog
 subtitle:
 description:
-author: John Doe
-language:
-timezone:
+author: liangxinhui
+language: zh-CN
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://blog.liangxh.cn
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -43,9 +42,17 @@ highlight:
   tab_replace:
 
 # Category & Tag
-default_category: uncategorized
+default_category: 未分类
 category_map:
+  未分类: default
+  IT技术: it
+  阅读: reading
+  编程: programing
+  
 tag_map:
+  Python
+  C++
+  Reading
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
@@ -62,9 +69,11 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: landscape
+theme: lightum
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: git@github.com:liangxinhui/liangxinhui.github.io.git
+  branch: master
